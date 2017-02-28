@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quero</title>
+    <link rel="icon" href="img1.ico" type="image/png">
+    <link rel="shortcut icon" href="img1.ico" type="img/x-icon">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="assets/faws/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/hover.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <!-- nav section starts -->
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <section>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html"><img class="hvr-grow"  src="assets/img/img1.png" /></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html" class="hvr-grow" href="#">Quero</a></li>
+          <li><input type="text" placeholder="Search Your Question...."></li>
+          <li><button type = "button" class = "btn btn-outline-success">Search</button></li>
+        </ul>
+      </section>
+      </div>
+    </div>
+  </nav>
+  <!--nav section ends  -->
+  <!-- post question section starts -->
+  <div class="container-fluid">
+    <!-- Trigger the modal with a button -->
+    <div class="col-md-4">
+    <section class="post_question">
+    <button type="button" class="btn btn-lg btn-outline-success hvr-float-shadow" data-toggle="modal" data-target="#myModal">Post Question</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Post Question</h4>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li><label for="Name-text" class="control-label">Name:</label>
+            <input type="text" class="form-control" id="tag-name"></li>
+              <li><label for="Email-text" class="control-label">Email-Id:</label>
+            <input type="text" class="form-control" id="tag-name"></li>
+              <li><label for="subject-text" class="control-label">Subject:</label>
+            <input type="text" class="form-control" id="tag-name"></li>
+              <li class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle dropbutton" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Choose your semester   <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">First</a></li>
+                    <li><a class="dropdown-item" href="#">Second</a></li>
+                    <li><a class="dropdown-item" href="#">Third</a></li>
+                    <li><a class="dropdown-item" href="#">Fourth</a></li>
+                    <li><a class="dropdown-item" href="#">Fifth</a></li>
+                    <li><a class="dropdown-item" href="#">Sixth</a></li>
+                    <li><a class="dropdown-item" href="#">Seventh</a></li>
+                    <li><a class="dropdown-item" href="#">Eighth</a></li>
+                  </ul>
+              </li>
+              <li><label for="tags-text" class="control-label">Related Tags:</label>
+            <input type="text" class="form-control" id="tag-name"></li>
+              <li><label for="message-text" class="control-label">Type Your Question Here:</label>
+            <textarea class="form-control" id="message-text"></textarea></li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Post</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </section>
+  </div>
+  <div class="col-md-4">
+  </div>
+  <div class="col-md-4">
+    <section class="semester">
+    <div class="btn-group ">
+  <button type="button" class="btn btn-lg sembutton ">Select Semester </button>
+  <button type="button" class="btn btn-lg sembutton dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span><i class="fa fa-caret-down" aria-hidden="true"></i>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">First</a></li>
+    <li><a class="dropdown-item" href="#">Second</a></li>
+    <li><a class="dropdown-item" href="#">Third</a></li>
+    <li><a class="dropdown-item" href="#">Fourth</a></li>
+    <li><a class="dropdown-item" href="#">Fifth</a></li>
+    <li><a class="dropdown-item" href="#">Sixth</a></li>
+    <li><a class="dropdown-item" href="#">Seventh</a></li>
+    <li><a class="dropdown-item" href="#">Eighth</a></li>
+  </ul>
+  </div>
+  </section>
+  </div>
+  </div>
+  <!-- post question section ends -->
+  <!--tabs section start  -->
+<div class="row" style="max-width:100%;margin:0;">
+  <div class="panel with-nav-tabs panel-default">
+                  <div class="panel-heading">
+                          <ul class="nav nav-tabs">
+                              <li><a class="hvr-shadow-radial active"href="#tab1default" data-toggle="tab">Recent</a></li>
+                              <li><a class="hvr-shadow-radial"href="#tab2default" data-toggle="tab">Trending</a></li>
+                              <li><a class="hvr-shadow-radial"href="#tab3default" data-toggle="tab">Popular</a></li>
+
+                          </ul>
+                  </div>
+                  <div class="panel-body">
+                      <div class="tab-content">
+                          <div class="tab-pane fade in active tab1" id="tab1default">
+                            <div class="col-md-2 col-xs-4">
+                              <section class="tab1-left">
+                                <img class="faces" src="assets/img/img7.jpeg" />
+                                <h3>Anthea</h3>
+                                <h5>02 Feb,2017</h5>
+                              </section>
+                            </div>
+                            <div class="col-md-10 col-xs-8">
+                            <section class="tab1-right">
+                              <h2>Do you think Indian girls really try to convince their parents to let them marry their boyfriends? Why?</h2>
+                              <p>I have seen that most Indian girls always argue with their parents about almost everything . They get their way with books, clothes,
+                                 education , employment, enjoyment etc. Suddenly however, every Indian girl wants to listen to her parents before getting married! Is it
+                                  because of the fact that the guy of their parents' choice in most cases is always, good-looking , well-settled and has a higher paying job than her boyfriend
+                              N.B : I'm talking about girls who had boyfriends but did not marry them because their parents did not like them or allow them.</p>
+                              <h4><i class="fa fa-check-circle" aria-hidden="true"></i>  Dating and Relationships</h4>
+                              <a href="index2.html"><button type="button" class="btn btn-outline-success ">View Answers</button></a>
+                            </section>
+                            </div>
+                            &nbsp;
+                            <hr>
+                            <div class="col-md-2 col-xs-4">
+                              <section class="tab1-left">
+                                <img class="faces" src="assets/img/img2.jpeg" />
+                                <h3>Anthea</h3>
+                                <h5>02 Feb,2017</h5>
+                              </section>
+                            </div>
+                            <div class="col-md-10 col-xs-8">
+                            <section class="tab1-right">
+                              <h2>Have you ever enjoy naughty party in your group?</h2>
+                              <p>party which shows in Hollywood films, playing card, one loose game then he/she remove her clothes one by one such type and that finally lead to nude party or partially nude party</p>
+                              <h4><i class="fa fa-check-circle" aria-hidden="true"></i>  Parties and Partying</h4>
+                              <a href="index2.html"><button type="button" class="btn btn-outline-success ">View Answers</button></a>
+                            </section>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="tab2default">
+                            <div class="col-md-2 col-xs-4">
+                              <section class="tab1-left">
+                                <img class="faces" src="assets/img/img3.jpeg" />
+                                <h3>Aaron</h3>
+                                <h5>02 Feb,2017</h5>
+                              </section>
+                            </div>
+                            <div class="col-md-10 col-xs-8">
+                            <section class="tab1-right">
+                              <h2>Who is affected more by a breakup, the boy or the girl?</h2>
+                              <p>Ever seen two kids playing with a rubber band? Two innocent kids holding on to a rubber band and both stretching it.
+                                Do you know who gets hurt when the rubber band breaks or if someone lets go?
+                                The person holding on to it...</p>
+                              <h4><i class="fa fa-check-circle" aria-hidden="true"></i>  Dating and Relationships</h4>
+                              <a href="index2.html"><button type="button" class="btn btn-outline-success ">View Answers</button></a>
+                            </section>
+                            </div>
+                            &nbsp;
+                            <hr>
+                            <div class="col-md-2 col-xs-4">
+                              <section class="tab1-left">
+                                <img class="faces" src="assets/img/img4.jpeg" />
+                                <h3>Anthea</h3>
+                                <h5>02 Feb,2017</h5>
+                              </section>
+                            </div>
+                            <div class="col-md-10 col-xs-8">
+                            <section class="tab1-right">
+                              <h2>When will Modi learn to talk like an educated man?</h2>
+                              <p>The way he spoke in the parliament was extremely pathetic and shameless.
+
+                                It is a matter of great shame that a Prime Minister is using this kind of crude language.</p>
+                              <h4><i class="fa fa-check-circle" aria-hidden="true"></i>  Dating and Relationships</h4>
+                              <a href="index2.html"><button type="button" class="btn btn-outline-success ">View Answers</button></a>
+                            </section>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="tab3default">
+                            <div class="col-md-2 col-xs-4">
+                              <section class="tab1-left">
+                                <img class="faces" src="assets/img/img5.jpeg" />
+                                <h3>Abraham</h3>
+                                <h5>02 Feb,2017</h5>
+                              </section>
+                            </div>
+                            <div class="col-md-10 col-xs-8">
+                            <section class="tab1-right">
+                              <h2>What are the perks of dating you?</h2>
+                              <p>Come on, advertise yourself! Write a short paragraph on why you think dating you is worth it.
+
+                              (This question has educational purposes; one is to evaluate how people handle their own self-image's
+                               exposure to others; and two is to maybe get a better idea on how people identify qualities in themselves.)</p>
+                              <h4><i class="fa fa-check-circle" aria-hidden="true"></i>  Dating and Relationships</h4>
+                              <a href="index2.html"><button type="button" class="btn btn-outline-success ">View Answers</button></a>
+                            </section>
+                            </div>
+                            &nbsp;
+                            <hr>
+                            <div class="col-md-2 col-xs-4">
+                              <section class="tab1-left">
+                                <img class="faces" src="assets/img/img6.jpeg" />
+                                <h3>Anthea</h3>
+                                <h5>02 Feb,2017</h5>
+                              </section>
+                            </div>
+                            <div class="col-md-10 col-xs-8">
+                            <section class="tab1-right">
+                              <h2>Do you have something to be sent to Bangalore from New Delhi?</h2>
+                              <p>
+                                I'm travelling tomorrow morning. From New delhi to Yeshwanthpur in Bangalore.
+                                I'm quite familiar with Bangalore so I can deliver it anywhere there.
+                                I can carry a parcel of weight not more than 12kgs.
+                                Also if you can tell me about the startups who can connect me to the senders, it would be a great help.
+                              </p>
+                              <h4><i class="fa fa-check-circle" aria-hidden="true"></i>  Dating and Relationships</h4>
+                              <a href="index2.html"><button type="button" class="btn btn-outline-success ">View Answers</button></a>
+                            </section>
+                            </div>
+                          </div>
+                  </div>
+              </div>
+        </div>
+  </div>
+
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
