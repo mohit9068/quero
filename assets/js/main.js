@@ -5,7 +5,7 @@ $.ajax({
   success: function(result){
     console.log(result);
     for(i in result.data){
-      $("#sel1").append($('<option>'+result.data[i].name+'</option>'));
+      $("#sel1").append($('<option>'+result.data[i].id+'</option>'));
       }
     }
   });
@@ -30,7 +30,6 @@ $.ajax({
           $("#tab2default").find('.h2').append($('<h2>'+result.data[0].question+'</h2>'));
           $("#tab2default").find('.desc').append($('<p>'+result.data[0].posted_by_email+'</p>'));
           $("#tab2default").find('.tag').append($('<h4>'+result.data[0].tags+'</h4>'));
-          $("#tab2default").find('.faces').append($('src='+result.data[0].image_url+));
 
         }
       });
