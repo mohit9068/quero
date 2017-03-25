@@ -17,10 +17,12 @@
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <SCRIPT type="text/javascript" src="assets/js/main.js"></SCRIPT>
+    <SCRIPT type="text/javascript" src="assets/js/pace.min.js"></SCRIPT>
     <link href="assets/css/style.css" rel="stylesheet" />
 
 </head>
-<body>
+<body onload="Answerpagefunction()">
 
   <nav class="navbar navbar-default">
     <!-- nav section starts -->
@@ -45,96 +47,13 @@
     </div>
   </nav>
   <!--nav section ends  -->
-  <div class="tab-pane fade in active tab1" id="tab1default">
-<section class="feed">
-    <div class="container-fluid" style="margin-top: 10px;">
 
-    <div class="col-md-2 col-xs-4">
-      <section class="tab1-left">
-        <img class="faces" src="assets/img/img7.jpeg" />
-        <h3>Anthea</h3>
-        <h5>02 Feb,2017</h5>
-      </section>
-    </div>
-    <div class="col-md-10 col-xs-8">
-    <section class="tab1-right">
-      <h2>Do you think Indian girls really try to convince their parents to let them marry their boyfriends? Why?</h2>
-      <p>I have seen that most Indian girls always argue with their parents about almost everything . They get their way with books, clothes,
-         education </p>
-      <h4><i class="fa fa-check-circle" aria-hidden="true"></i>  Dating and Relationships</h4>
-      <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal">Post Answer</button>
-    </section>
-    </div>
-    &nbsp;
-</div>
-</section>
-  </div>
-
-<div class="container">
-    <div class="row">
-      <div class="col-md-12 col-sm-12" style="padding: 0px;text-align: center;">
-        <div class="talk-bubble round tri-right left-top ">
-          <div class="talktext">
-            <p>Suddenly however, every Indian joyment etc. Suddenly however, every Indian girl wants to listen to her parents before getting married! Is it
-             because of the fact that the guy of their parents' choice in most cases is always, good-looking  </p>
-             <div class="col-md-6 col-xs-4">
-               <div class="widget">
-<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Facadview%2F&width=72&layout=button_count&action=like&size=small&show_faces=true&share=false&height=21&appId" width="72" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-               </div>
-             </div>
-             <div class="col-md-6 col-xs-8 answername">
-                <h6>Posted by : Anthea</h6><br></br>
-                <h6>Date: 02 feb,2017</h6>
-             </div>
-
+      <div class="tab-content" style="background:#fff;">
+        <div class="tab-pane fade in active tab1" id="tab1default">
         </div>
       </div>
-    </div>
-  </div>
-</div>
-<div class="container">
-    <div class="row">
-      <div class="col-md-12 col-sm-12" style="padding: 0px;text-align: center;">
-        <div class="talk-bubble round tri-right left-top ">
-          <div class="talktext">
-            <p>Suddenly however, every Indian joyment etc. Suddenly however, every Indian girl wants to listen to her parents before getting married! Is it
-             because of the fact that the guy of their parents' choice in most cases is always, good-looking , </p>
-             <div class="col-md-6 col-xs-4">
-               <div class="widget">
-<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Facadview%2F&width=72&layout=button_count&action=like&size=small&show_faces=true&share=false&height=21&appId" width="72" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-               </div>
-             </div>
-             <div class="col-md-6 col-xs-8 answername">
-                <h6>Posted by : Anthea</h6><br></br>
-                <h6>Date: 02 feb,2017</h6>
-             </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container">
-    <div class="row">
-      <div class="col-md-12 col-sm-12" style="padding: 0px;text-align: center;">
-        <div class="talk-bubble round tri-right left-top">
-          <div class="talktext">
-            <p>Suddenly however, every Indian joyment etc. Suddenly however, every Indian girl wants to listen to her parents before getting married! Is it
-             because of the fact that the guy of their parents' choice in most cases is always, good-looking ,</p>
-             <div class="col-md-6  col-xs-4">
-               <div class="widget">
-<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Facadview%2F&width=72&layout=button_count&action=like&size=small&show_faces=true&share=false&height=21&appId" width="72" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-               </div>
-             </div>
-             <div class="col-md-6 col-xs-8 answername">
-                <h6>Posted by : Anthea</h6><br></br>
-                <h6>Date: 02 feb,2017</h6>
-             </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="container" id="answerbox">
+<!-- answer box ajax implemented -->
 </div>
 
 <!-- modal section starts -->

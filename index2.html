@@ -18,6 +18,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <SCRIPT type="text/javascript" src="assets/js/main.js"></SCRIPT>
     <SCRIPT type="text/javascript" src="assets/js/jquery-3.1.1.js"></SCRIPT>
+    <SCRIPT type="text/javascript" src="assets/js/pace.min.js"></SCRIPT>
     <link href="assets/css/style.css" rel="stylesheet" />
 </head>
 <body onload="myFunction()">
@@ -62,7 +63,7 @@
             <h4 class="modal-title">Post Question</h4>
           </div>
           <div class="modal-body">
-              <form class="cmxform" id="commentForm" method="get" action="">
+              <form class="cmxform" id="commentForm">
                 <fieldset>
                   <ul style="padding-left: 0px;">
                     <li>
@@ -109,7 +110,7 @@
                    <li><label for="messagetext" class="control-label">Type Your Question Here:</label>
                    <textarea class="form-control" id="messagetext" required></textarea></li>
                    <hr>
-                   <button class="submit btn btn-success" type="submit" id="submit_form">Post</button>
+                   <button class="btn btn-success" id="submit_form" onclick = "postfunction()">Post</button>
                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                </ul>
              </fieldset>
@@ -151,73 +152,13 @@
                           </ul>
                   </div>
                   <div class="panel-body">
-                      <div class="tab-content">
+                      <div class="tab-content" style="background:#fff;">
                           <div class="tab-pane fade in active tab1" id="tab1default">
-                            <section class="feed">
-                            <div class="col-md-2 col-xs-4">
-                              <section class="tab1-left">
-                                <img class="faces" src="assets/img/img6.jpeg" />
-                                <div class="h3"></div>
-                                <h5>02 Feb,2017</h5>
-                              </section>
                             </div>
-                            <div class="col-md-10 col-xs-8">
-                            <section class="tab1-right">
-                              <div class="h2"></div>
-                              <div class="desc"></div>
-                              <div class="tag">Tags: </div>
-                              <a href="index3.html"><button type="button" class="btn btn-outline-success ">View Answers</button></a>
-                            </section>
-                            </div>
-                            &nbsp;
-                            </section>
-                            <hr>
-</div>
-
                           <div class="tab-pane fade" id="tab2default">
-                            <section class="feed">
-                            <div class="col-md-2 col-xs-4">
-                              <section class="tab1-left">
-                                <img class="faces" src="assets/img/img6.jpeg" />
-                                <div class="h3"></div>
-                                <h5>02 Feb,2017</h5>
-                              </section>
                             </div>
-                            <div class="col-md-10 col-xs-8">
-                            <section class="tab1-right">
-                              <div class="h2"></div>
-                              <div class="desc"></div>
-                              <div class="tag">Tags: </div>
-                              <a href="index3.html"><button type="button" class="btn btn-outline-success ">View Answers</button></a>
-                            </section>
-                            </div>
-                            &nbsp;
-                            </section>
-                            <hr>
-
-                          </div>
                           <div class="tab-pane fade" id="tab3default">
-                            <section class="feed">
-                            <div class="col-md-2 col-xs-4">
-                              <section class="tab1-left">
-                                <img class="faces" src="assets/img/img6.jpeg" />
-                                <div class="h3"></div>
-                                <h5>02 Feb,2017</h5>
-                              </section>
                             </div>
-                            <div class="col-md-10 col-xs-8">
-                            <section class="tab1-right">
-                              <div class="h2"></div>
-                              <div class="desc"></div>
-                              <div class="tag">Tags: </div>
-                              <a href="index3.html"><button type="button" class="btn btn-outline-success ">View Answers</button></a>
-                            </section>
-                            </div>
-                            &nbsp;
-                            </section>
-                            <hr>
-
-                          </div>
                   </div>
               </div>
         </div>
@@ -251,9 +192,6 @@
        </div>
    </div>
 </footer>
-<script>
-$("#commentForm").validate();
 
-</script>
 </body>
 </html>
