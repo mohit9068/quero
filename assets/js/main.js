@@ -48,7 +48,7 @@ function Answerpagefunction(){
     type: 'GET',
     success: function(result){
       console.log(result);
-        $("#tab1default").append($('<div><div class="col-md-2 col-xs-4"><section class="tab1-left"><img class="imagestyle" src='+result.data[0].image_url+'/><div class="h3"><h3>'+result.data[0].posted_by_name+'</h3></div><h5>02 Feb,2017</h5></section></div><div class="col-md-10 col-xs-8"><section class="tab1-right"><div class="h2"><h2>'+result.data[0].question+'</h2></div><div class="desc"><p>'+result.data[0].posted_by_email+'</p></div><div class="tag">Tags:<h4>'+result.data[0].tags+'</h4></div><a href="index3.html"><button type="button" class="btn btn-outline-success ">View Answers</button></a></section></div></div>&nbsp<hr>'));
+        $("#tab1default").append($('<div><div class="col-md-2 col-xs-4"><section class="tab1-left"><img class="imagestyle" src='+result.data[0].image_url+'/><div class="h3"><h3>'+result.data[0].posted_by_name+'</h3></div><h5>02 Feb,2017</h5></section></div><div class="col-md-10 col-xs-8"><section class="tab1-right"><div class="h2"><h2>'+result.data[0].question+'</h2></div><div class="desc"><p>'+result.data[0].posted_by_email+'</p></div><div class="tag">Tags:<h4>'+result.data[0].tags+'</h4></div><button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal">Post Answer</button></section></div></div>&nbsp<hr>'));
       }
     });
     $.ajax({
@@ -64,37 +64,45 @@ function Answerpagefunction(){
 };
 
 
+
+
+function postfunction(){
+console.log('post function called');
   var $Nametext = $('#Nametext');
   var $Emailtext = $('#Emailtext');
   var $sel1 = $('#sel1');
   var $sel2 = $('#sel2');
   var $tagstext = $('#tagstext');
   var $messagetext = $('#messagetext');
-
-function postfunction(){
+console.log($Nametext.val(),$tagstext.val());
  var FormData = {
 	  posted_by_name : $Nametext.val(),
 	  posted_by_email: $Emailtext.val(),
 	  semester : $sel2.val(),
-	  tags: $tagstext.val(),
+	  tags: [$tagstext.val()],
 	  question : $messagetext.val(),
 	  subject_id : $sel1.val(),
 	};
-  $.ajax({
-    url: 'http://acadprojects.com/py/explora/question',
-    type: 'POST',
-    data: FormData,
-    success: function(result){
-      console.log(result);
-      alert("messgae successfully posted");
-      $('#myModal').modal('toggle');
-    }
-  });
-
- $('.modal').on('hidden.bs.modal', function(){
-    $(this).find('form')[0].reset();
+console.log('form data');
+console.log(FormData);
+$.ajax({
+  url: 'http://acadprojects.com/py/explora/question',
+  type: 'POST',
+  data: JSON.stringify(FormData),
+  contentType: 'application/json; charset=utf-8',
+  dataType: 'json',
+  async: false,
+  success: function(msg) {
+      alert(msg);
+  },
+  error: function(msg){
+    alert(msg);
+  }
 });
-  };
+//  $('.modal').on('hidden.bs.modal', function(){
+//     $(this).find('form')[0].reset();
+// });
+};
 
 
 function update1(id,likec){
