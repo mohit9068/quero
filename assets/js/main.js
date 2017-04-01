@@ -5,7 +5,7 @@ $.ajax({
   success: function(result){
     console.log(result);
     for(i in result.data){
-      $("#sel1").append($('<option value="+result.data[i].name+">'+result.data[i].name+'</option>'));
+      $("#sel1").append($('<option value="'+result.data[i].id+'">'+result.data[i].name+'</option>'));
       }
     }
   });
@@ -84,7 +84,7 @@ console.log($Nametext.val(),$tagstext.val());
 	  subject_id : $sel1.val(),
 	};
 console.log('form data');
-console.log(FormData);
+console.log(JSON.stringify(FormData));
 $.ajax({
   url: 'http://acadprojects.com/py/explora/question',
   type: 'POST',
@@ -99,6 +99,8 @@ $.ajax({
     alert(msg);
   }
 });
+
+return false;
 //  $('.modal').on('hidden.bs.modal', function(){
 //     $(this).find('form')[0].reset();
 // });
