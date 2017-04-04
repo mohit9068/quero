@@ -68,19 +68,18 @@
       </div>
       <div class="modal-body">
         <form class="cmxform" id="commentForm" method="get" action="">
-          <fieldset>
+
         <ul style="padding-left: 0px;">
           <li><label for="Name-text" class="control-label">Name:</label>
-            <input type="text" class="form-control" id="tag-name" required></li>
+            <input type="text" class="form-control" id="Name" required></li>
           <li><label for="Email-text" class="control-label">Email-Id:</label>
-            <input type="text" class="form-control" id="tag-name" required></li>
+            <input type="text" class="form-control" id="Email" required></li>
           <li><label for="message-text" class="control-label">Type Your Answer Here:</label>
-            <textarea class="form-control" id="message-text" required></textarea></li>
+            <textarea class="form-control" id="answertext" required></textarea></li>
             <hr>
-            <button class="submit btn btn-success" type="submit" value="Submit">Post</button>
+            <button class="submit btn btn-success" onclick = "return postanswer()">Post</button>
             <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </ul>
-    </fieldset>
    </form>
       </div>
 
@@ -107,6 +106,6 @@
    </div>
 </footer>
 <script>
-$("#commentForm").validate();
+
 </script>
 </body>

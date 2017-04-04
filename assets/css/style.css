@@ -59,7 +59,7 @@ border-color: #fff;
   text-align: center;
   color: white;
   background: #57d197;
-  font-size: 21px;
+  font-size:14px;
 }
 .nav-tabs>li>a:hover{
   color: black;
@@ -90,7 +90,7 @@ border-color: #fff;
   border: 1px solid #48ad7d;
   color: #fff;
 }
-.modal-body>form>fieldset>ul>li{
+.modal-body>form>ul>li{
   list-style: none;
   margin: 10px;
 
@@ -175,7 +175,7 @@ text-align: center;
 
 .imagestyle{
   width: 48%;
-  height: 95px;
+  height: 85px;
   border-radius: 100px;
 }
 @media(max-width: 667px){
@@ -532,6 +532,11 @@ float: right;
   .tab1-left{
     padding-bottom: 7px;
   }
+}
+.like>button{
+  background: white;
+  border-color: #4267b2;
+  border-radius: 10px;
 }
 .like{
   margin: 20px;
